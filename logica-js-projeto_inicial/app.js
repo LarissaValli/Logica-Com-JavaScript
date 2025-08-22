@@ -1,36 +1,88 @@
-alert ('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random() * 10 + 1);
-console.log(numeroSecreto);
-let chute;
-let tentativas = 1;
+// alert ('Boas vindas ao jogo do número secreto');
+// let numeroSecreto = parseInt(Math.random() * 10 + 1);
+// console.log(numeroSecreto);
+// let chute;
+// let tentativas = 1;
 
 //Math.random() - retorna um número pseudo-aleatório, ou seja, o número é aleatório e misterioso. Intervalo de 0 e 1, ou seja, vai gerar um número maior que 0 e menor que 1.
 //parseInt() é uma função em JavaScript usada para analisar uma string e retornar um número inteiro. Ela interpreta a string da esquerda para a direita, convertendo os caracteres numéricos encontrados em um valor inteiro.
 //enquanto o chute não for igual ao número secreto
 //!= significa não igual
 //Os loops permitem automatizar tarefas repetitivas e lidar com grandes quantidades de dados de fomra eficiente. É importante usá-los com cuidado para evitar loops infinitos
-while (chute != numeroSecreto) {
-    chute = prompt(`Escolha um número entre 1 e 10`);
-    // se chute for igual ao número secreto
-    if (chute == numeroSecreto) {
-        break;
-    } else {
-        if (chute > numeroSecreto) {
-            alert(`O número secreto é menor que ${chute}`);
-        } else {
-            alert(`O número secreto é maior que ${chute}`);
-        }
-        //tentativas = tentativas + 1;
-        tentativas++;
-        // Para atribuir mais 1: ++
-    }
 
-}
-if (tentativas > 1) {
-    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
-} else {
-    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
-}
+// while (chute != numeroSecreto) {
+//     chute = prompt(`Escolha um número entre 1 e 10`);
+//     // se chute for igual ao número secreto
+//     if (chute == numeroSecreto) {
+//         break;
+//     } else {
+//         if (chute > numeroSecreto) {
+//             alert(`O número secreto é menor que ${chute}`);
+//         } else {
+//             alert(`O número secreto é maior que ${chute}`);
+//         }
+//         //tentativas = tentativas + 1;
+//         tentativas++;
+//         // Para atribuir mais 1: ++
+//     }
+
+// }
+// if (tentativas > 1) {
+//     alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+// } else {
+//     alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+// }
+
+//DESAFIO FINAL
+// console.log(`Boas vindas`);
+// let nome = "Larissa";
+// console.log(`Olá, meu nome é ${nome}`);
+// let primeiroNome = "Larissa";
+// alert(`Olá, meu nome é ${primeiroNome}!`);
+// let pergunta = prompt(`Qual a linguagem de programação que você mais gosta?`);
+// console.log(pergunta);
+
+// let valor1 = 23;
+// let valor2 = 25;
+// let resultado = valor1 - valor2;
+
+// console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}.`);
+
+// let idade = prompt(`Digite sua idade:`);
+// if (idade > 17) {
+//     console.log(`Você é maior de idade`);
+// } else {
+//     console.log(`Você é menor de idade`);
+// }
+
+// let numero = parseInt(prompt("Digite um número:"));
+// if (numero > 0) {
+//     console.log("O número é positivo.");
+// } else if (numero < 0) {
+//     console.log("O número é negativo.");
+// } else {
+//     console.log("O número é zero.");
+// }
+
+// let numeroImprimir = 1;
+// while (numero <= 10) {
+//     console.log(numero);
+//     numero++;
+// }
+
+// let nota = 8; //Substitua pelo valor da nota que deseja testar
+// if (nota >= 7) {
+//     console.log("Aprovado");
+// } else {
+//     console.log("Reprovado");
+// }
+
+// let numeroAleatorio = parseInt(Math.random() * 10) + 1;
+// console.log(numeroAleatorio);
+
+
+
+
 
 //DESAFIO DE LOOP E WHILE
 //1.Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
