@@ -1,8 +1,9 @@
-// alert ('Boas vindas ao jogo do número secreto');
-// let numeroSecreto = parseInt(Math.random() * 10 + 1);
-// console.log(numeroSecreto);
-// let chute;
-// let tentativas = 1;
+alert ('Boas vindas ao jogo do número secreto');
+let numeroMaximo = 5000;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
+console.log(numeroSecreto);
+let chute;
+let tentativas = 1;
 
 //Math.random() - retorna um número pseudo-aleatório, ou seja, o número é aleatório e misterioso. Intervalo de 0 e 1, ou seja, vai gerar um número maior que 0 e menor que 1.
 //parseInt() é uma função em JavaScript usada para analisar uma string e retornar um número inteiro. Ela interpreta a string da esquerda para a direita, convertendo os caracteres numéricos encontrados em um valor inteiro.
@@ -10,28 +11,28 @@
 //!= significa não igual
 //Os loops permitem automatizar tarefas repetitivas e lidar com grandes quantidades de dados de fomra eficiente. É importante usá-los com cuidado para evitar loops infinitos
 
-// while (chute != numeroSecreto) {
-//     chute = prompt(`Escolha um número entre 1 e 10`);
-//     // se chute for igual ao número secreto
-//     if (chute == numeroSecreto) {
-//         break;
-//     } else {
-//         if (chute > numeroSecreto) {
-//             alert(`O número secreto é menor que ${chute}`);
-//         } else {
-//             alert(`O número secreto é maior que ${chute}`);
-//         }
-//         //tentativas = tentativas + 1;
-//         tentativas++;
-//         // Para atribuir mais 1: ++
-//     }
+while (chute != numeroSecreto) {
+chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
+// se chute for igual ao número secreto
+if (chute == numeroSecreto) {
+break;
+} else {
+if (chute > numeroSecreto) {
+alert(`O número secreto é menor que ${chute}`);
+} else {
+alert(`O número secreto é maior que ${chute}`);
+}
+//tentativas = tentativas + 1;
+tentativas++;
+// Para atribuir mais 1: ++
+}
 
-// }
-// if (tentativas > 1) {
-//     alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
-// } else {
-//     alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
-// }
+}
+if (tentativas > 1) {
+alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+} else {
+alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+}
 
 //DESAFIO FINAL
 // console.log(`Boas vindas`);
