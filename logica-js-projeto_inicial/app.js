@@ -6,6 +6,7 @@ let tentativas = 1;
 
 //enquanto o chute não for igual ao número secreto
 //!= significa não igual
+//Os loops permitem automatizar tarefas repetitivas e lidar com grandes quantidades de dados de fomra eficiente. É importante usá-los com cuidado para evitar loops infinitos
 while (chute != numeroSecreto) {
     chute = prompt(`Escolha um número entre 1 e 10`);
     // se chute for igual ao número secreto
